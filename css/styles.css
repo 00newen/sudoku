@@ -6,6 +6,7 @@ body {
 	padding: 0;
 }
 header {
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 ul {
@@ -18,10 +19,11 @@ ul {
 	float: left;
 	width: 1.5em;
 	text-align: center;
+	padding: 1px;
 }
-.sudoku {
+#sudoku {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 35px 20px;
 	border: 1px solid #F00;
 	margin-left: 50px;
 	margin-top: 30px;
@@ -31,4 +33,8 @@ ul {
 }
 .bottom-line {
 	border-bottom: 1px solid #a3a3a3;
+}
+.bSelected {
+	border: 1px solid #F00;
+	padding: 0px;
 }
