@@ -1,7 +1,7 @@
 
 
 body {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0;
 	padding: 0;
 }
@@ -11,15 +11,28 @@ header {
 }
 ul {
 	list-style: none;
-	/*padding-left: 0px;*/
 	margin: 0;
 	padding: 0;
 }
 .col {
 	float: left;
-	width: 1.5em;
+	width: 1.2em;
 	text-align: center;
 	padding: 1px;
+}
+.row {
+	display: block;
+	float: none;
+	height: 1.2em;
+}
+.row li {
+	width: 1.2em;
+	height: 1.2em;
+}
+.row li span {
+	display: inline-block;
+	height: 1.2em;
+	width: 1.2em;
 }
 #sudoku {
 	display: inline-block;
@@ -37,4 +50,20 @@ ul {
 .bSelected {
 	border: 1px solid #F00;
 	padding: 0px;
+}
+.duplicated_number {
+	color: #F00;
+}
+#checked-numbers {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #FF0;
+}
+#checked-numbers li {
+	width: 1em;
+	display: inline-block;
+	color: #00F;
+}
+#instructions {
+	margin-left: 50px;
 }

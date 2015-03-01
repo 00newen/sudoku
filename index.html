@@ -2,135 +2,152 @@
 <html>
 <head>
 	<title>Sudoku</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body onkeypress="keyPressed(event)">
+<body>
 	<div id="sudoku">
 		<header>Sudoku</header>
 		<div>
 			<ul>
 				<li class="row">
 					<ul>
-						<li class="col bSelected" id="a11"><span>1</span></li>
-						<li class="col" id="a12">2</li>
-						<li class="col right-line" id="a13">3</li>
-						<li class="col" id="a14">4</li>
-						<li class="col" id="a15">5</li>
-						<li class="col right-line" id="a16">6</li>
-						<li class="col" id="a17">7</li>
-						<li class="col" id="a18">8</li>
-						<li class="col" id="a19">9</li>
+						<li class="col bSelected" id="a11"><span></span></li>
+						<li class="col" id="a12"><span>2</span></li>
+						<li class="col right-line" id="a13"><span></span></li>
+						<li class="col" id="a14"><span></span></li>
+						<li class="col" id="a15"><span>8</span></li>
+						<li class="col right-line" id="a16"><span></span></li>
+						<li class="col" id="a17"><span>7</span></li>
+						<li class="col" id="a18"><span>6</span></li>
+						<li class="col" id="a19"><span>3</span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col" id="a21">1</li>
-						<li class="col" id="a22">2</li>
-						<li class="col right-line" id="a23">3</li>
-						<li class="col" id="a24">4</li>
-						<li class="col" id="a25">5</li>
-						<li class="col right-line" id="a26">6</li>
-						<li class="col" id="a27">7</li>
-						<li class="col" id="a28">8</li>
-						<li class="col" id="a29">9</li>
+						<li class="col" id="a21"><span></span></li>
+						<li class="col" id="a22"><span></span></li>
+						<li class="col right-line" id="a23"><span></span></li>
+						<li class="col" id="a24"><span>2</span></li>
+						<li class="col" id="a25"><span></span></li>
+						<li class="col right-line" id="a26"><span></span></li>
+						<li class="col" id="a27"><span></span></li>
+						<li class="col" id="a28"><span>5</span></li>
+						<li class="col" id="a29"><span></span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col bottom-line" id="a31">1</li>
-						<li class="col bottom-line" id="a32">2</li>
-						<li class="col bottom-line right-line" id="a33">3</li>
-						<li class="col bottom-line" id="a34">4</li>
-						<li class="col bottom-line" id="a35">5</li>
-						<li class="col bottom-line right-line" id="a36">6</li>
-						<li class="col bottom-line" id="a37">7</li>
-						<li class="col bottom-line" id="a38">8</li>
-						<li class="col bottom-line" id="a39">9</li>
+						<li class="col bottom-line" id="a31"><span></span></li>
+						<li class="col bottom-line" id="a32"><span></span></li>
+						<li class="col bottom-line right-line" id="a33"><span></span></li>
+						<li class="col bottom-line" id="a34"><span>3</span></li>
+						<li class="col bottom-line" id="a35"><span></span></li>
+						<li class="col bottom-line right-line" id="a36"><span></span></li>
+						<li class="col bottom-line" id="a37"><span>9</span></li>
+						<li class="col bottom-line" id="a38"><span>2</span></li>
+						<li class="col bottom-line" id="a39"><span></span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col" id="a41">1</li>
-						<li class="col" id="a42">2</li>
-						<li class="col right-line" id="a43">3</li>
-						<li class="col" id="a44">4</li>
-						<li class="col" id="a45">5</li>
-						<li class="col right-line" id="a46">6</li>
-						<li class="col" id="a47">7</li>
-						<li class="col" id="a48">8</li>
-						<li class="col" id="a49">9</li>
+						<li class="col" id="a41"><span></span></li>
+						<li class="col" id="a42"><span></span></li>
+						<li class="col right-line" id="a43"><span>5</span></li>
+						<li class="col" id="a44"><span></span></li>
+						<li class="col" id="a45"><span></span></li>
+						<li class="col right-line" id="a46"><span></span></li>
+						<li class="col" id="a47"><span>4</span></li>
+						<li class="col" id="a48"><span></span></li>
+						<li class="col" id="a49"><span>2</span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col" id="a51">1</li>
-						<li class="col" id="a52">2</li>
-						<li class="col right-line" id="a53">3</li>
-						<li class="col" id="a54">4</li>
-						<li class="col" id="a55">5</li>
-						<li class="col right-line" id="a56">6</li>
-						<li class="col" id="a57">7</li>
-						<li class="col" id="a58">8</li>
-						<li class="col" id="a59">9</li>
+						<li class="col" id="a51"><span>6</span></li>
+						<li class="col" id="a52"><span></span></li>
+						<li class="col right-line" id="a53"><span></span></li>
+						<li class="col" id="a54"><span>1</span></li>
+						<li class="col" id="a55"><span>2</span></li>
+						<li class="col right-line" id="a56"><span>7</span></li>
+						<li class="col" id="a57"><span></span></li>
+						<li class="col" id="a58"><span></span></li>
+						<li class="col" id="a59"><span>5</span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col bottom-line" id="a61">1</li>
-						<li class="col bottom-line" id="a62">2</li>
-						<li class="col bottom-line right-line" id="a63">3</li>
-						<li class="col bottom-line" id="a64">4</li>
-						<li class="col bottom-line" id="a65">5</li>
-						<li class="col bottom-line right-line" id="a66">6</li>
-						<li class="col bottom-line" id="a67">7</li>
-						<li class="col bottom-line" id="a68">8</li>
-						<li class="col bottom-line" id="a69">9</li>
+						<li class="col bottom-line" id="a61"><span>2</span></li>
+						<li class="col bottom-line" id="a62"><span></span></li>
+						<li class="col bottom-line right-line" id="a63"><span>7</span></li>
+						<li class="col bottom-line" id="a64"><span></span></li>
+						<li class="col bottom-line" id="a65"><span></span></li>
+						<li class="col bottom-line right-line" id="a66"><span></span></li>
+						<li class="col bottom-line" id="a67"><span>3</span></li>
+						<li class="col bottom-line" id="a68"><span></span></li>
+						<li class="col bottom-line" id="a69"><span></span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col" id="a71">1</li>
-						<li class="col" id="a72">2</li>
-						<li class="col right-line" id="a73">3</li>
-						<li class="col" id="a74">4</li>
-						<li class="col" id="a75">5</li>
-						<li class="col right-line" id="a76">6</li>
-						<li class="col" id="a77">7</li>
-						<li class="col" id="a78">8</li>
-						<li class="col" id="a79">9</li>
+						<li class="col" id="a71"><span></span></li>
+						<li class="col" id="a72"><span>1</span></li>
+						<li class="col right-line" id="a73"><span>9</span></li>
+						<li class="col" id="a74"><span></span></li>
+						<li class="col" id="a75"><span></span></li>
+						<li class="col right-line" id="a76"><span>6</span></li>
+						<li class="col" id="a77"><span></span></li>
+						<li class="col" id="a78"><span></span></li>
+						<li class="col" id="a79"><span></span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col" id="a81">1</li>
-						<li class="col" id="a82">2</li>
-						<li class="col right-line" id="a83">3</li>
-						<li class="col" id="a84">4</li>
-						<li class="col" id="a85">5</li>
-						<li class="col right-line" id="a86">6</li>
-						<li class="col" id="a87">7</li>
-						<li class="col" id="a88">8</li>
-						<li class="col" id="a89">9</li>
+						<li class="col" id="a81"><span></span></li>
+						<li class="col" id="a82"><span>3</span></li>
+						<li class="col right-line" id="a83"><span></span></li>
+						<li class="col" id="a84"><span></span></li>
+						<li class="col" id="a85"><span></span></li>
+						<li class="col right-line" id="a86"><span>2</span></li>
+						<li class="col" id="a87"><span></span></li>
+						<li class="col" id="a88"><span></span></li>
+						<li class="col" id="a89"><span></span></li>
 					</ul>
 				</li>
 				<li class="row">
 					<ul>
-						<li class="col" id="a91">1</li>
-						<li class="col" id="a92">2</li>
-						<li class="col right-line" id="a93">3</li>
-						<li class="col" id="a94">4</li>
-						<li class="col" id="a95">5</li>
-						<li class="col right-line" id="a96">6</li>
-						<li class="col" id="a97">7</li>
-						<li class="col" id="a98">8</li>
-						<li class="col" id="a99">9</li>
+						<li class="col" id="a91"><span>7</span></li>
+						<li class="col" id="a92"><span>6</span></li>
+						<li class="col right-line" id="a93"><span>2</span></li>
+						<li class="col" id="a94"><span></span></li>
+						<li class="col" id="a95"><span>1</span></li>
+						<li class="col right-line" id="a96"><span></span></li>
+						<li class="col" id="a97"><span></span></li>
+						<li class="col" id="a98"><span>8</span></li>
+						<li class="col" id="a99"><span></span></li>
 					</ul>
 				</li>
 			</ul>
 			<script type="text/javascript" src="js/sudoku.js"></script>
 		</div>
+		<footer>
+			<ul id="checked-numbers">
+				<li><span class="n1">1</span></li>
+				<li><span class="n2">2</span></li>
+				<li><span class="n3">3</span></li>
+				<li><span class="n4">4</span></li>
+				<li><span class="n5">5</span></li>
+				<li><span class="n6">6</span></li>
+				<li><span class="n7">7</span></li>
+				<li><span class="n8">8</span></li>
+				<li><span class="n9">9</span></li>
+			</ul>
+		</footer>
 	</div>
+		<footer id="instructions">
+			<p>Use WASD keys to move</p>
+			<p>Use 0 to erase a number</p>
+		</footer>
 
 </body>
 </html>
