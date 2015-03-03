@@ -142,16 +142,16 @@ var checkDuplicates = function(_num) {
 var checkRowDuplicates = function(_num) {
 
 	var _a = rows[selRow-1];
-	selectedBox.children[0].classList.remove('duplicated_number');
+	selectedBox.children[0].classList.remove('duplicated-number');
 
 	for (var i = 0; i < _a.length; i++) {
 		if (_a[i].id != selectedBox.id) {
 		    if (_a[i].children[0].innerHTML == _num) {
 		        // found duplicate number, change font color to red
-				_a[i].children[0].classList.add('duplicated_number');
-				selectedBox.children[0].classList.add('duplicated_number');
+				_a[i].children[0].classList.add('duplicated-number');
+				selectedBox.children[0].classList.add('duplicated-number');
 		    } else {
-				_a[i].children[0].classList.remove('duplicated_number');
+				_a[i].children[0].classList.remove('duplicated-number');
 		    }
 		}
 	}
@@ -164,10 +164,10 @@ var checkColDuplicates = function(_num) {
 		if (_a[i].id != selectedBox.id) {
 		    if (_a[i].children[0].innerHTML == _num) {
 		        // found duplicate number, change font color to red
-				_a[i].children[0].classList.add('duplicated_number');
-				selectedBox.children[0].classList.add('duplicated_number');
+				_a[i].children[0].classList.add('duplicated-number');
+				selectedBox.children[0].classList.add('duplicated-number');
 		    } else {
-				_a[i].children[0].classList.remove('duplicated_number');
+				_a[i].children[0].classList.remove('duplicated-number');
 		    }
 		}
 	}
@@ -180,10 +180,10 @@ var checkCelDuplicates = function(_num) {
 		if (_a[i].id != selectedBox.id) {
 		    if (_a[i].children[0].innerHTML == _num) {
 		        // found duplicate number, change font color to red
-				_a[i].children[0].classList.add('duplicated_number');
-				selectedBox.children[0].classList.add('duplicated_number');
+				_a[i].children[0].classList.add('duplicated-number');
+				selectedBox.children[0].classList.add('duplicated-number');
 		    } else {
-				_a[i].children[0].classList.remove('duplicated_number');
+				_a[i].children[0].classList.remove('duplicated-number');
 		    }
 		}
 	}
