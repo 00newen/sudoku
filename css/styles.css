@@ -43,7 +43,6 @@ ul {
 }
 .row {
 	display: block;
-	float: none;
 	height: 1.2em;
 }
 .row li {
@@ -56,11 +55,13 @@ ul {
 	width: 1.2em;
 }
 #sudoku {
-	display: inline-block;
+	display: block;
 	padding: 0px 13px 10px 13px;
 	border: 1px solid #700072;
 	margin-left: 50px;
 	margin-top: 30px;
+	margin: 30px auto;
+	width: 270px;
 }
 #sudoku header {
 	background-color: #471f49;
